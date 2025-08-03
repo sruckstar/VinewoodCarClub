@@ -1,0 +1,17 @@
+//You can help support Vinewood Car Club by modifying the data in this file in time for other players to receive the garage update in time with the update in GTA Online.
+//File structure: modelID, primary color, secondary color, coloring (-1 if not present)
+//Check out the current contents of the garage in GTA Online: https://www.rockstargames.com/gta-plus/benefits
+//Don't delete these comments on the request
+
+//Latest data: August 2025
+
+scramjet, 55, 55, 5
+oppressor, 0, 0, -1
+ignus, 131, 131, 5
+l352, 135, 135, 9
+cheetah3, 0, 0, 0 
+hardy,42,42,9
+tenf, 51, 51, 0
+virtue, 37, 37, 8
+openwheel2, 67, 67, 4
+buffalo5,70,27,3

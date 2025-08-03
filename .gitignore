@@ -1,0 +1,10 @@
+*.db
+*.db-shm
+*.db-wal
+*.vsidx
+/.vs
+/The Vinewood Club/.vs
+/The Vinewood Club/bin
+/The Vinewood Club/Core
+/The Vinewood Club/obj
+/The Vinewood Club/Properties
