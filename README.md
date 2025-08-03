@@ -10,8 +10,6 @@ This mod is compatible with the Vinewood Club Garage by HKH191. I recommend inst
 
 MOD DOES NOT WORK ON ENHANCED VERSION OF GTA 5!
 
-
-GitHub page: https://github.com/sruckstar/VinewoodCarClubSP
 Join my Discord server: https://discord.gg/vvxmKP5y5J
 
 Requirements:
