@@ -18,7 +18,7 @@ public class VinewoodEntry : Script
     public static float StreetPlayerAngle = 3.314108f;
     public static int GarageInteriorID = 0;
     public static Blip VinewoodCarClub;
-    private const string VehicleListUrl = "https://raw.githubusercontent.com/sruckstar/VinewoodCarClubSP/main/system_updates/VehicleList.txt";
+    private const string VehicleListUrl = "https://raw.githubusercontent.com/sruckstar/VinewoodCarClub/main/VinewoodCarClub/VehicleList.txt";
     private static ScriptSettings config_settings;
 
     public static List<string> models_peds = new List<string>() {
