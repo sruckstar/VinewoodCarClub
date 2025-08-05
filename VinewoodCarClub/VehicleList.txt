@@ -1,5 +1,5 @@
 //You can help support Vinewood Car Club by modifying the data in this file in time for other players to receive the garage update in time with the update in GTA Online.
-//File structure: modelID, primary color, secondary color, coloring (-1 if not present)
+//File structure: modelID, primary color, secondary color, livery (-1 if not present)
 //Check out the current contents of the garage in GTA Online: https://www.rockstargames.com/gta-plus/benefits
 //Don't delete these comments on the request
 
