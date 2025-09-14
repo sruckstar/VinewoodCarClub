@@ -3,15 +3,15 @@
 //Check out the current contents of the garage in GTA Online: https://www.rockstargames.com/gta-plus/benefits
 //Don't delete these comments on the request
 
-//Latest data: August 2025
+//Latest update: September 2025
 
-deluxo, 92, 92, -1
-toreador, 111, 111, 2
-reever, 89, 89, 0
-cinquemila, 43, 43, 6
-reaper, 111, 111, -1
-zentorno, 42, 42, 80
-baller8, 107, 115, 6
-omnisegt, 126, 126, 12
-vectre, 25, 25, 15
-torero2, 0, 27, 5
+polcoquette4, 70, 111, 8
+polfaction2, 53, 111, 4
+polcaracara, 111, 53, 25
+prototipo, 148, 148, -1 
+comet6, 0, 0, 12
+cyclone2, 0, 0, 9
+schlagen, 111, 111, 7
+infernus2, 89, 89, -1
+windsor2, 111, 30, -1
+polterminus, 0, 111, 6
