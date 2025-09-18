@@ -203,65 +203,64 @@ public class VinewoodEntry : Script
 
         if (createdVehicles.Count > 0)
         {
+            int index = 0;
             foreach (Vehicle vehicle in createdVehicles.ToArray())
             {
                 if (Game.Player.Character.CurrentVehicle == vehicle)
                 {
+
                     if (Game.IsControlJustPressed(GTA.Control.VehicleAccelerate) ||
                         Game.IsControlJustPressed(GTA.Control.VehicleBrake))
                     {
-                        int index = -1;
-                        index = Vehicles.FindIndex(v => v.Name == vehicle.DisplayName.ToLower());
-                        if (index >= 0)
-                        {
-                            if (Function.Call<int>(Hash.GET_INTERIOR_AT_COORDS, Game.Player.Character.Position.X,
+                        if (Function.Call<int>(Hash.GET_INTERIOR_AT_COORDS, Game.Player.Character.Position.X,
                                 Game.Player.Character.Position.Y,
                                 Game.Player.Character.Position.Z) == GarageInteriorID)
+                        {
+
+                            GTA.UI.Screen.FadeOut(500);
+                            Wait(500);
+
+                            Vehicles[index].CanSpawn = false;
+                            vehicle.Position = Street;
+                            vehicle.Heading = StreetPlayerAngle;
+                            vehicle.IsPersistent = false;
+                            createdVehicles.Remove(vehicle);
+
+                            DeletePeds();
+                            DeleteVehicles();
+
+                            switch (index)
                             {
-
-                                GTA.UI.Screen.FadeOut(500);
-                                Wait(500);
-
-                                Vehicles[index].CanSpawn = false;
-                                vehicle.Position = Street;
-                                vehicle.Heading = StreetPlayerAngle;
-                                vehicle.IsPersistent = false;
-                                createdVehicles.Remove(vehicle);
-
-                                DeletePeds();
-                                DeleteVehicles();
-
-                                switch (index)
-                                {
-                                    case 0:
-                                        pedConfigs[0].CanSpawn = false;
-                                        break;
-                                    case 2:
-                                        pedConfigs[1].CanSpawn = false;
-                                        pedConfigs[2].CanSpawn = false;
-                                        break;
-                                    case 5:
-                                        pedConfigs[7].CanSpawn = false;
-                                        pedConfigs[8].CanSpawn = false;
-                                        break;
-                                    case 6:
-                                        pedConfigs[6].CanSpawn = false;
-                                        break;
-                                    case 7:
-                                        pedConfigs[5].CanSpawn = false;
-                                        break;
-                                    case 9:
-                                        pedConfigs[3].CanSpawn = false;
-                                        pedConfigs[4].CanSpawn = false;
-                                        break;
-                                }
-
-                                Wait(500);
-                                GTA.UI.Screen.FadeIn(500);
+                                case 0:
+                                    pedConfigs[0].CanSpawn = false;
+                                    break;
+                                case 2:
+                                    pedConfigs[1].CanSpawn = false;
+                                    pedConfigs[2].CanSpawn = false;
+                                    break;
+                                case 5:
+                                    pedConfigs[7].CanSpawn = false;
+                                    pedConfigs[8].CanSpawn = false;
+                                    break;
+                                case 6:
+                                    pedConfigs[6].CanSpawn = false;
+                                    break;
+                                case 7:
+                                    pedConfigs[5].CanSpawn = false;
+                                    break;
+                                case 9:
+                                    pedConfigs[3].CanSpawn = false;
+                                    pedConfigs[4].CanSpawn = false;
+                                    break;
                             }
+
+                            Wait(500);
+                            GTA.UI.Screen.FadeIn(500);
                         }
                     }
                 }
+
+                index++;
             }
         }
     }
